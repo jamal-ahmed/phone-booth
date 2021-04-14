@@ -85,10 +85,10 @@
             </objects>
             <point key="canvasLocation" x="18.840579710144929" y="76.339285714285708"/>
         </scene>
-        <!--View Controller-->
+        <!--Take Photo View Controller-->
         <scene sceneID="ukG-Nk-ZJw">
             <objects>
-                <viewController id="B4x-xt-CB3" sceneMemberID="viewController">
+                <viewController id="B4x-xt-CB3" customClass="TakePhotoViewController" customModule="PhoneBooth" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8ip-CQ-8zm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
