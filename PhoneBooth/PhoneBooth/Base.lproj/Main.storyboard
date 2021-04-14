@@ -27,7 +27,7 @@
                                         </constraints>
                                         <state key="normal" title="Take a Photo"/>
                                         <connections>
-                                            <segue destination="B4x-xt-CB3" kind="show" identifier="takePhoto" id="fmi-ID-yhx"/>
+                                            <segue destination="9qT-aD-1tW" kind="show" identifier="takePhoto" id="BF2-qo-4JZ"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ES3-K8-bC8" customClass="RoundedCornerButton" customModule="PhoneBooth" customModuleProvider="target">
@@ -84,152 +84,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hCW-ee-nsT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="18.840579710144929" y="76.339285714285708"/>
-        </scene>
-        <!--Take Photo View Controller-->
-        <scene sceneID="ukG-Nk-ZJw">
-            <objects>
-                <viewController id="B4x-xt-CB3" customClass="TakePhotoViewController" customModule="PhoneBooth" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8ip-CQ-8zm">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L3Y-ac-XI9">
-                                <rect key="frame" x="0.0" y="88" width="414" height="205"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4rU-JL-v4D">
-                                        <rect key="frame" x="169.5" y="20" width="75" height="75"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="75" id="eCK-ui-05x"/>
-                                            <constraint firstAttribute="height" constant="75" id="p6t-Gx-6Mu"/>
-                                        </constraints>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="10"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
-                                                <color key="value" systemColor="systemYellowColor"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
-                                                <integer key="value" value="1"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </imageView>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BaD-Iy-n4f">
-                                        <rect key="frame" x="0.0" y="115" width="414" height="44"/>
-                                        <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Give the photo a name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MUE-GL-KF8">
-                                                <rect key="frame" x="20" y="0.0" width="279" height="44"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
-                                                        <integer key="value" value="1"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                        <integer key="value" value="10"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
-                                                        <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                            </textField>
-                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M7u-w4-Nln" customClass="RoundedCornerButton" customModule="PhoneBooth" customModuleProvider="target">
-                                                <rect key="frame" x="319" y="0.0" width="75" height="44"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="75" id="Mbw-Mt-kiV"/>
-                                                </constraints>
-                                                <state key="normal" title="Save"/>
-                                            </button>
-                                        </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                        <constraints>
-                                            <constraint firstItem="MUE-GL-KF8" firstAttribute="leading" secondItem="BaD-Iy-n4f" secondAttribute="leading" constant="20" id="1Vw-KZ-Ezh"/>
-                                            <constraint firstAttribute="trailing" secondItem="M7u-w4-Nln" secondAttribute="trailing" constant="20" id="6Hq-g6-y65"/>
-                                            <constraint firstItem="MUE-GL-KF8" firstAttribute="top" secondItem="BaD-Iy-n4f" secondAttribute="top" id="Gf1-lY-tKJ"/>
-                                            <constraint firstAttribute="bottom" secondItem="M7u-w4-Nln" secondAttribute="bottom" id="HFn-VX-BN5"/>
-                                            <constraint firstItem="M7u-w4-Nln" firstAttribute="leading" secondItem="MUE-GL-KF8" secondAttribute="trailing" constant="20" id="P0d-B0-zSE"/>
-                                            <constraint firstAttribute="bottom" secondItem="MUE-GL-KF8" secondAttribute="bottom" id="Wsn-TC-kBg"/>
-                                            <constraint firstItem="M7u-w4-Nln" firstAttribute="top" secondItem="BaD-Iy-n4f" secondAttribute="top" id="tdo-8o-77v"/>
-                                            <constraint firstAttribute="height" constant="44" id="ySU-4p-Y6b"/>
-                                        </constraints>
-                                    </view>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lCW-VJ-KfX" customClass="RoundedCornerButton" customModule="PhoneBooth" customModuleProvider="target">
-                                        <rect key="frame" x="20" y="179" width="374" height="44"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="44" id="k52-wM-LUO"/>
-                                        </constraints>
-                                        <state key="normal" title="Discard"/>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstItem="BaD-Iy-n4f" firstAttribute="top" secondItem="4rU-JL-v4D" secondAttribute="bottom" constant="20" id="CEa-QG-eqg"/>
-                                    <constraint firstAttribute="trailing" secondItem="lCW-VJ-KfX" secondAttribute="trailing" constant="20" id="FLH-3Y-7mu"/>
-                                    <constraint firstAttribute="height" constant="205" id="GaW-u4-8pd"/>
-                                    <constraint firstItem="4rU-JL-v4D" firstAttribute="top" secondItem="L3Y-ac-XI9" secondAttribute="top" constant="20" id="KhP-3A-3Hu"/>
-                                    <constraint firstItem="lCW-VJ-KfX" firstAttribute="leading" secondItem="L3Y-ac-XI9" secondAttribute="leading" constant="20" id="OD5-bd-trg"/>
-                                    <constraint firstItem="4rU-JL-v4D" firstAttribute="centerX" secondItem="L3Y-ac-XI9" secondAttribute="centerX" id="QQH-5L-Rgl"/>
-                                    <constraint firstItem="lCW-VJ-KfX" firstAttribute="top" secondItem="BaD-Iy-n4f" secondAttribute="bottom" constant="20" id="TfQ-WN-4HH"/>
-                                    <constraint firstItem="BaD-Iy-n4f" firstAttribute="leading" secondItem="L3Y-ac-XI9" secondAttribute="leading" id="W1l-bU-DfR"/>
-                                    <constraint firstAttribute="trailing" secondItem="BaD-Iy-n4f" secondAttribute="trailing" id="tVO-bE-hAF"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uca-Wu-MBN">
-                                <rect key="frame" x="0.0" y="802" width="414" height="60"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6L3-vH-BTw">
-                                        <rect key="frame" x="177" y="0.0" width="60" height="60"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="60" id="ybw-sU-reW"/>
-                                        </constraints>
-                                        <color key="tintColor" systemColor="systemYellowColor"/>
-                                        <state key="normal" image="CapturePhoto"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="4"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z2e-Zt-08C">
-                                        <rect key="frame" x="324" y="0.0" width="60" height="60"/>
-                                        <color key="tintColor" systemColor="systemYellowColor"/>
-                                        <state key="normal" image="FlipCamera"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="4"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstItem="Z2e-Zt-08C" firstAttribute="width" secondItem="6L3-vH-BTw" secondAttribute="width" id="0ft-1G-8zD"/>
-                                    <constraint firstItem="6L3-vH-BTw" firstAttribute="top" secondItem="uca-Wu-MBN" secondAttribute="top" id="NLR-p9-y0C"/>
-                                    <constraint firstAttribute="trailing" secondItem="Z2e-Zt-08C" secondAttribute="trailing" constant="30" id="Ndh-0N-dhT"/>
-                                    <constraint firstItem="6L3-vH-BTw" firstAttribute="centerX" secondItem="uca-Wu-MBN" secondAttribute="centerX" id="R4e-jy-Pap"/>
-                                    <constraint firstAttribute="height" constant="60" id="huF-7v-DK6"/>
-                                    <constraint firstAttribute="bottom" secondItem="Z2e-Zt-08C" secondAttribute="bottom" id="lzQ-dw-t89"/>
-                                    <constraint firstItem="Z2e-Zt-08C" firstAttribute="top" secondItem="uca-Wu-MBN" secondAttribute="top" id="nTm-DC-cvS"/>
-                                    <constraint firstAttribute="bottom" secondItem="6L3-vH-BTw" secondAttribute="bottom" id="vld-uA-LYI"/>
-                                </constraints>
-                            </view>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="hWl-IF-J3m"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="hWl-IF-J3m" firstAttribute="trailing" secondItem="uca-Wu-MBN" secondAttribute="trailing" id="BTS-Vv-EQr"/>
-                            <constraint firstItem="uca-Wu-MBN" firstAttribute="leading" secondItem="hWl-IF-J3m" secondAttribute="leading" id="DAu-ne-h60"/>
-                            <constraint firstItem="L3Y-ac-XI9" firstAttribute="leading" secondItem="hWl-IF-J3m" secondAttribute="leading" id="LV2-Bd-OB5"/>
-                            <constraint firstItem="L3Y-ac-XI9" firstAttribute="top" secondItem="hWl-IF-J3m" secondAttribute="top" id="N35-cy-Idb"/>
-                            <constraint firstItem="uca-Wu-MBN" firstAttribute="bottom" secondItem="hWl-IF-J3m" secondAttribute="bottom" id="Usy-1J-Icb"/>
-                            <constraint firstItem="hWl-IF-J3m" firstAttribute="trailing" secondItem="L3Y-ac-XI9" secondAttribute="trailing" id="c2x-WE-eET"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="caf-ST-knS"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="NEO-3N-wY6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2099" y="-360"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Il1-z3-55B">
@@ -305,19 +159,187 @@
             </objects>
             <point key="canvasLocation" x="3120" y="343"/>
         </scene>
+        <!--Take Photo View Controller-->
+        <scene sceneID="pHE-Fm-U4D">
+            <objects>
+                <viewController id="9qT-aD-1tW" customClass="TakePhotoViewController" customModule="PhoneBooth" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NlW-yH-rMH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L1a-B6-gVn">
+                                <rect key="frame" x="0.0" y="88" width="414" height="205"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IFj-Yd-f8Y">
+                                        <rect key="frame" x="169.5" y="20" width="75" height="75"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="75" id="2Ho-SF-eBF"/>
+                                            <constraint firstAttribute="height" constant="75" id="dxa-Wo-vrg"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                                <color key="value" systemColor="systemYellowColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aEN-tr-n1r">
+                                        <rect key="frame" x="0.0" y="115" width="414" height="44"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Give the photo a name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n0g-KH-sLH">
+                                                <rect key="frame" x="20" y="0.0" width="279" height="44"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                        <integer key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                                        <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dhz-y9-PsC" customClass="RoundedCornerButton" customModule="PhoneBooth" customModuleProvider="target">
+                                                <rect key="frame" x="319" y="0.0" width="75" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="75" id="Itl-fe-BtR"/>
+                                                </constraints>
+                                                <state key="normal" title="Save"/>
+                                                <connections>
+                                                    <action selector="saveImageButtonClicked:" destination="9qT-aD-1tW" eventType="touchUpInside" id="S9X-Jf-jju"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="dhz-y9-PsC" firstAttribute="leading" secondItem="n0g-KH-sLH" secondAttribute="trailing" constant="20" id="JPn-oE-AhX"/>
+                                            <constraint firstAttribute="bottom" secondItem="dhz-y9-PsC" secondAttribute="bottom" id="d5W-Mf-ogL"/>
+                                            <constraint firstItem="dhz-y9-PsC" firstAttribute="top" secondItem="aEN-tr-n1r" secondAttribute="top" id="meG-Fm-CYS"/>
+                                            <constraint firstItem="n0g-KH-sLH" firstAttribute="top" secondItem="aEN-tr-n1r" secondAttribute="top" id="nq2-2s-lDK"/>
+                                            <constraint firstAttribute="bottom" secondItem="n0g-KH-sLH" secondAttribute="bottom" id="oDN-MB-3kH"/>
+                                            <constraint firstAttribute="trailing" secondItem="dhz-y9-PsC" secondAttribute="trailing" constant="20" id="ra9-96-488"/>
+                                            <constraint firstItem="n0g-KH-sLH" firstAttribute="leading" secondItem="aEN-tr-n1r" secondAttribute="leading" constant="20" id="vro-DS-78h"/>
+                                            <constraint firstAttribute="height" constant="44" id="wKo-aL-x2i"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JSD-RO-tYg" customClass="RoundedCornerButton" customModule="PhoneBooth" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="179" width="374" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="xdP-oF-bws"/>
+                                        </constraints>
+                                        <state key="normal" title="Discard"/>
+                                        <connections>
+                                            <action selector="discardImageButtonClicked:" destination="9qT-aD-1tW" eventType="touchUpInside" id="S3f-gv-Y3H"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="IFj-Yd-f8Y" firstAttribute="centerX" secondItem="L1a-B6-gVn" secondAttribute="centerX" id="10P-2G-I23"/>
+                                    <constraint firstItem="aEN-tr-n1r" firstAttribute="top" secondItem="IFj-Yd-f8Y" secondAttribute="bottom" constant="20" id="BCD-M4-nar"/>
+                                    <constraint firstAttribute="trailing" secondItem="aEN-tr-n1r" secondAttribute="trailing" id="Kuk-jD-8Gs"/>
+                                    <constraint firstItem="aEN-tr-n1r" firstAttribute="leading" secondItem="L1a-B6-gVn" secondAttribute="leading" id="N2O-l6-giI"/>
+                                    <constraint firstItem="JSD-RO-tYg" firstAttribute="leading" secondItem="L1a-B6-gVn" secondAttribute="leading" constant="20" id="OUp-ao-R6a"/>
+                                    <constraint firstAttribute="trailing" secondItem="JSD-RO-tYg" secondAttribute="trailing" constant="20" id="abt-fr-HTa"/>
+                                    <constraint firstAttribute="height" constant="205" id="kU6-xx-cbY"/>
+                                    <constraint firstItem="JSD-RO-tYg" firstAttribute="top" secondItem="aEN-tr-n1r" secondAttribute="bottom" constant="20" id="vNb-Mj-wdE"/>
+                                    <constraint firstItem="IFj-Yd-f8Y" firstAttribute="top" secondItem="L1a-B6-gVn" secondAttribute="top" constant="20" id="zsI-DV-XJT"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8YE-qh-h6g">
+                                <rect key="frame" x="0.0" y="802" width="414" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5u4-NH-xBE">
+                                        <rect key="frame" x="177" y="0.0" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="VUw-oM-siO"/>
+                                        </constraints>
+                                        <color key="tintColor" systemColor="systemYellowColor"/>
+                                        <state key="normal" image="CapturePhoto"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="takePhotoButtonClicked:" destination="9qT-aD-1tW" eventType="touchUpInside" id="2nF-jN-gCx"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="55n-F3-jAu">
+                                        <rect key="frame" x="324" y="0.0" width="60" height="60"/>
+                                        <color key="tintColor" systemColor="systemYellowColor"/>
+                                        <state key="normal" image="FlipCamera"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="flipCameraButtonClicked:" destination="9qT-aD-1tW" eventType="touchUpInside" id="dOZ-BL-Xzi"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="55n-F3-jAu" secondAttribute="bottom" id="5qc-OD-T6f"/>
+                                    <constraint firstAttribute="height" constant="60" id="AyP-UC-TU2"/>
+                                    <constraint firstAttribute="trailing" secondItem="55n-F3-jAu" secondAttribute="trailing" constant="30" id="doU-aC-Gvq"/>
+                                    <constraint firstItem="55n-F3-jAu" firstAttribute="width" secondItem="5u4-NH-xBE" secondAttribute="width" id="eDv-46-ncf"/>
+                                    <constraint firstAttribute="bottom" secondItem="5u4-NH-xBE" secondAttribute="bottom" id="ehb-JW-8Z6"/>
+                                    <constraint firstItem="5u4-NH-xBE" firstAttribute="centerX" secondItem="8YE-qh-h6g" secondAttribute="centerX" id="gek-H7-2KM"/>
+                                    <constraint firstItem="55n-F3-jAu" firstAttribute="top" secondItem="8YE-qh-h6g" secondAttribute="top" id="iDi-MI-Cu5"/>
+                                    <constraint firstItem="5u4-NH-xBE" firstAttribute="top" secondItem="8YE-qh-h6g" secondAttribute="top" id="j5Q-fD-Vto"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="jne-OY-jDU"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8YE-qh-h6g" firstAttribute="leading" secondItem="jne-OY-jDU" secondAttribute="leading" id="CR6-vX-9VA"/>
+                            <constraint firstItem="L1a-B6-gVn" firstAttribute="leading" secondItem="jne-OY-jDU" secondAttribute="leading" id="K2E-QA-Mzg"/>
+                            <constraint firstItem="L1a-B6-gVn" firstAttribute="top" secondItem="jne-OY-jDU" secondAttribute="top" id="Nun-Vz-30V"/>
+                            <constraint firstItem="jne-OY-jDU" firstAttribute="trailing" secondItem="8YE-qh-h6g" secondAttribute="trailing" id="VAL-xu-qyn"/>
+                            <constraint firstItem="8YE-qh-h6g" firstAttribute="bottom" secondItem="jne-OY-jDU" secondAttribute="bottom" id="sEY-X4-WSc"/>
+                            <constraint firstItem="jne-OY-jDU" firstAttribute="trailing" secondItem="L1a-B6-gVn" secondAttribute="trailing" id="wPg-jT-ZX4"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="UiJ-Kn-mD0"/>
+                    <connections>
+                        <outlet property="cameraOptionsView" destination="8YE-qh-h6g" id="Hmz-pb-og0"/>
+                        <outlet property="cameraOptionsViewHeightConstraints" destination="AyP-UC-TU2" id="DLw-1w-HLv"/>
+                        <outlet property="fileNameTextField" destination="n0g-KH-sLH" id="54F-d3-lvI"/>
+                        <outlet property="flipCameraButton" destination="55n-F3-jAu" id="JNZ-Ws-lSS"/>
+                        <outlet property="takePhotoButton" destination="5u4-NH-xBE" id="iLR-K9-KaF"/>
+                        <outlet property="thumbnilContainerView" destination="L1a-B6-gVn" id="5kj-ry-B29"/>
+                        <outlet property="thumbnilContainerViewHeightConstraints" destination="kU6-xx-cbY" id="087-UJ-bPd"/>
+                        <outlet property="thumbnilImage" destination="IFj-Yd-f8Y" id="iMs-68-Dug"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uk0-Ci-yaB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2099" y="-360"/>
+        </scene>
     </scenes>
     <designables>
         <designable name="ES3-K8-bC8">
             <size key="intrinsicContentSize" width="85" height="30"/>
         </designable>
-        <designable name="M7u-w4-Nln">
-            <size key="intrinsicContentSize" width="34" height="30"/>
+        <designable name="JSD-RO-tYg">
+            <size key="intrinsicContentSize" width="53" height="30"/>
         </designable>
         <designable name="Xmn-DX-rTi">
             <size key="intrinsicContentSize" width="88" height="30"/>
         </designable>
-        <designable name="lCW-VJ-KfX">
-            <size key="intrinsicContentSize" width="53" height="30"/>
+        <designable name="dhz-y9-PsC">
+            <size key="intrinsicContentSize" width="34" height="30"/>
         </designable>
     </designables>
     <resources>
