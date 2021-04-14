@@ -15,7 +15,7 @@ class TakePhotoViewController: UIViewController {
     @IBOutlet weak var thumbnilImage: UIImageView!
     @IBOutlet weak var fileNameTextField: UITextField!
     @IBAction func saveImageButtonClicked(_ sender: Any) {
-        guard let imageData = thumbnilImage.image?.compressedData,
+        guard let imageData = thumbnilImage.image?.jpegData(compressionQuality: 0.9),
               let fileName = fileNameTextField.text else { return }
 
         photoManager.addPhoto(imageName: fileName,

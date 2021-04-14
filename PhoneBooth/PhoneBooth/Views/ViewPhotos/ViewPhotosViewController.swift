@@ -33,12 +33,9 @@ class ViewPhotosViewController: UIViewController {
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-
-
-    }
-
-    override func performSegue(withIdentifier identifier: String, sender: Any?) {
-
+        if let viewController = segue.destination as? PhotoDetailsViewController {
+            viewController.photo = selectedPhoto
+        }
     }
 }
 
@@ -59,10 +56,7 @@ extension ViewPhotosViewController: UICollectionViewDelegate, UICollectionViewDa
     }
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
-    }
-
-    private func performSegue(phot: Photo) {
-
+        selectedPhoto = photos[indexPath.item]
+        performSegue(withIdentifier: "photoDetails", sender: nil)
     }
 }

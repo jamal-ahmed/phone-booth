@@ -135,10 +135,10 @@
             </objects>
             <point key="canvasLocation" x="2098.5507246376815" y="342.85714285714283"/>
         </scene>
-        <!--View Controller-->
+        <!--Photo Details View Controller-->
         <scene sceneID="amp-F1-lL4">
             <objects>
-                <viewController storyboardIdentifier="PhotoDetailsViewController" id="2Xw-wC-a0r" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PhotoDetailsViewController" id="2Xw-wC-a0r" customClass="PhotoDetailsViewController" customModule="PhoneBooth" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="s3n-9Q-zIy">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -150,13 +150,20 @@
                         <viewLayoutGuide key="safeArea" id="n84-9i-gVl"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="e5X-Sd-I7y" firstAttribute="trailing" secondItem="n84-9i-gVl" secondAttribute="trailing" id="Bqz-NK-Sfq"/>
+                            <constraint firstItem="e5X-Sd-I7y" firstAttribute="bottom" secondItem="n84-9i-gVl" secondAttribute="bottom" id="ISE-er-c2t"/>
                             <constraint firstItem="e5X-Sd-I7y" firstAttribute="top" secondItem="n84-9i-gVl" secondAttribute="top" id="T9r-j6-Uni"/>
                             <constraint firstItem="n84-9i-gVl" firstAttribute="bottom" secondItem="e5X-Sd-I7y" secondAttribute="bottom" id="X5D-bz-EfL"/>
+                            <constraint firstItem="e5X-Sd-I7y" firstAttribute="top" secondItem="n84-9i-gVl" secondAttribute="top" id="YKQ-dC-9mW"/>
                             <constraint firstItem="n84-9i-gVl" firstAttribute="trailing" secondItem="e5X-Sd-I7y" secondAttribute="trailing" id="aQd-8e-fCW"/>
+                            <constraint firstItem="e5X-Sd-I7y" firstAttribute="leading" secondItem="n84-9i-gVl" secondAttribute="leading" id="cLz-Qx-JCc"/>
                             <constraint firstItem="e5X-Sd-I7y" firstAttribute="leading" secondItem="n84-9i-gVl" secondAttribute="leading" id="u5W-YV-HPl"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ovZ-fz-vUY"/>
+                    <connections>
+                        <outlet property="imageView" destination="e5X-Sd-I7y" id="Dtc-dL-5W9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d2p-hl-dU2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
