@@ -15,6 +15,19 @@ class TakePhotoViewController: UIViewController {
     @IBOutlet weak var thumbnilImage: UIImageView!
     @IBOutlet weak var fileNameTextField: UITextField!
     @IBAction func saveImageButtonClicked(_ sender: Any) {
+        guard let imageData = thumbnilImage.image?.compressedData,
+              let fileName = fileNameTextField.text else { return }
+
+        photoManager.addPhoto(imageName: fileName,
+                              imageData: imageData) { result in
+            switch result {
+            case .success(let photo):
+                print("Saved photo: \(String(describing: photo.imageName)) successful")
+                startSession()
+            case .failure(let error):
+                print("Unable to save photo: \(error.localizedDescription)")
+            }
+        }
     }
     @IBAction func discardImageButtonClicked(_ sender: Any) {
         thumbnilImage.image = nil
@@ -56,6 +69,7 @@ class TakePhotoViewController: UIViewController {
     // MARK: - variables
     private let localisation = Localised.takePhoto
     private let cameraManager = CameraManager()
+    private let photoManager = PhotoRepositoryManager()
 
     var previewLayer: AVCaptureVideoPreviewLayer!
 

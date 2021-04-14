@@ -26,6 +26,11 @@
 		897182242626A9C800AD571D /* RoundedCornerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897182232626A9C800AD571D /* RoundedCornerButton.swift */; };
 		8971822C2626AAE200AD571D /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8971822B2626AAE200AD571D /* CameraManager.swift */; };
 		897182322626AB3800AD571D /* TakePhotoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897182312626AB3800AD571D /* TakePhotoService.swift */; };
+		8971824B2626B1A900AD571D /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8971824A2626B1A900AD571D /* CoreDataStack.swift */; };
+		897182502626B1D400AD571D /* PhotoRepositoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8971824F2626B1D400AD571D /* PhotoRepositoryManager.swift */; };
+		897182552626B53500AD571D /* RepositoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897182542626B53500AD571D /* RepositoryService.swift */; };
+		8971825A2626B6BC00AD571D /* UIImage+Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897182592626B6BC00AD571D /* UIImage+Data.swift */; };
+		8971825F2626B72C00AD571D /* ImageResizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8971825E2626B72C00AD571D /* ImageResizer.swift */; };
 		FBEFB15D44D4184BA38983B6 /* Pods_PhoneBooth_PhoneBoothUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56B10618B817A5A62AFA2FED /* Pods_PhoneBooth_PhoneBoothUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -77,6 +82,11 @@
 		897182232626A9C800AD571D /* RoundedCornerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornerButton.swift; sourceTree = "<group>"; };
 		8971822B2626AAE200AD571D /* CameraManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraManager.swift; sourceTree = "<group>"; };
 		897182312626AB3800AD571D /* TakePhotoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakePhotoService.swift; sourceTree = "<group>"; };
+		8971824A2626B1A900AD571D /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		8971824F2626B1D400AD571D /* PhotoRepositoryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoRepositoryManager.swift; sourceTree = "<group>"; };
+		897182542626B53500AD571D /* RepositoryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryService.swift; sourceTree = "<group>"; };
+		897182592626B6BC00AD571D /* UIImage+Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Data.swift"; sourceTree = "<group>"; };
+		8971825E2626B72C00AD571D /* ImageResizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageResizer.swift; sourceTree = "<group>"; };
 		D95BCD36BB69377749F90CA1 /* Pods-PhoneBooth-PhoneBoothUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhoneBooth-PhoneBoothUITests.debug.xcconfig"; path = "Target Support Files/Pods-PhoneBooth-PhoneBoothUITests/Pods-PhoneBooth-PhoneBoothUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		F300B166CD814C5DFF595EC4 /* Pods_PhoneBooth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhoneBooth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -216,6 +226,7 @@
 			isa = PBXGroup;
 			children = (
 				897182232626A9C800AD571D /* RoundedCornerButton.swift */,
+				8971825E2626B72C00AD571D /* ImageResizer.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -224,6 +235,7 @@
 			isa = PBXGroup;
 			children = (
 				897181A826269F7200AD571D /* PhoneBooth.xcdatamodeld */,
+				8971824A2626B1A900AD571D /* CoreDataStack.swift */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -232,6 +244,7 @@
 			isa = PBXGroup;
 			children = (
 				8971822B2626AAE200AD571D /* CameraManager.swift */,
+				8971824F2626B1D400AD571D /* PhotoRepositoryManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -239,6 +252,7 @@
 		897181F62626A66900AD571D /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				897182592626B6BC00AD571D /* UIImage+Data.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -277,6 +291,7 @@
 			isa = PBXGroup;
 			children = (
 				897182312626AB3800AD571D /* TakePhotoService.swift */,
+				897182542626B53500AD571D /* RepositoryService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -515,6 +530,8 @@
 				897181AA26269F7200AD571D /* PhoneBooth.xcdatamodeld in Sources */,
 				897182062626A6EA00AD571D /* Localisation.swift in Sources */,
 				897182242626A9C800AD571D /* RoundedCornerButton.swift in Sources */,
+				8971824B2626B1A900AD571D /* CoreDataStack.swift in Sources */,
+				8971825F2626B72C00AD571D /* ImageResizer.swift in Sources */,
 				897181A026269F7200AD571D /* AppDelegate.swift in Sources */,
 				8971822C2626AAE200AD571D /* CameraManager.swift in Sources */,
 				8971821A2626A8F800AD571D /* Localisation+TakePhoto.swift in Sources */,
@@ -522,7 +539,10 @@
 				8971820B2626A70E00AD571D /* Licalisation+MainView.swift in Sources */,
 				8971821F2626A97000AD571D /* TakePhotoViewController.swift in Sources */,
 				897181EC2626A5B100AD571D /* MainViewController.swift in Sources */,
+				897182502626B1D400AD571D /* PhotoRepositoryManager.swift in Sources */,
 				897182322626AB3800AD571D /* TakePhotoService.swift in Sources */,
+				8971825A2626B6BC00AD571D /* UIImage+Data.swift in Sources */,
+				897182552626B53500AD571D /* RepositoryService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
