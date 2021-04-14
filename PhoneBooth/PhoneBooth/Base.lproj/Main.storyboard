@@ -306,6 +306,20 @@
             <point key="canvasLocation" x="3120" y="343"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="ES3-K8-bC8">
+            <size key="intrinsicContentSize" width="85" height="30"/>
+        </designable>
+        <designable name="M7u-w4-Nln">
+            <size key="intrinsicContentSize" width="34" height="30"/>
+        </designable>
+        <designable name="Xmn-DX-rTi">
+            <size key="intrinsicContentSize" width="88" height="30"/>
+        </designable>
+        <designable name="lCW-VJ-KfX">
+            <size key="intrinsicContentSize" width="53" height="30"/>
+        </designable>
+    </designables>
     <resources>
         <image name="CapturePhoto" width="150" height="150"/>
         <image name="FlipCamera" width="150" height="150"/>

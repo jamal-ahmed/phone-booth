@@ -23,6 +23,7 @@
 		8971820B2626A70E00AD571D /* Licalisation+MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8971820A2626A70E00AD571D /* Licalisation+MainView.swift */; };
 		8971821A2626A8F800AD571D /* Localisation+TakePhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897182192626A8F800AD571D /* Localisation+TakePhoto.swift */; };
 		8971821F2626A97000AD571D /* TakePhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8971821E2626A97000AD571D /* TakePhotoViewController.swift */; };
+		897182242626A9C800AD571D /* RoundedCornerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897182232626A9C800AD571D /* RoundedCornerButton.swift */; };
 		FBEFB15D44D4184BA38983B6 /* Pods_PhoneBooth_PhoneBoothUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56B10618B817A5A62AFA2FED /* Pods_PhoneBooth_PhoneBoothUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -71,6 +72,7 @@
 		8971820A2626A70E00AD571D /* Licalisation+MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Licalisation+MainView.swift"; sourceTree = "<group>"; };
 		897182192626A8F800AD571D /* Localisation+TakePhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Localisation+TakePhoto.swift"; sourceTree = "<group>"; };
 		8971821E2626A97000AD571D /* TakePhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakePhotoViewController.swift; sourceTree = "<group>"; };
+		897182232626A9C800AD571D /* RoundedCornerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornerButton.swift; sourceTree = "<group>"; };
 		D95BCD36BB69377749F90CA1 /* Pods-PhoneBooth-PhoneBoothUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhoneBooth-PhoneBoothUITests.debug.xcconfig"; path = "Target Support Files/Pods-PhoneBooth-PhoneBoothUITests/Pods-PhoneBooth-PhoneBoothUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		F300B166CD814C5DFF595EC4 /* Pods_PhoneBooth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhoneBooth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -208,6 +210,7 @@
 		897181F32626A65300AD571D /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				897182232626A9C800AD571D /* RoundedCornerButton.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -497,6 +500,7 @@
 			files = (
 				897181AA26269F7200AD571D /* PhoneBooth.xcdatamodeld in Sources */,
 				897182062626A6EA00AD571D /* Localisation.swift in Sources */,
+				897182242626A9C800AD571D /* RoundedCornerButton.swift in Sources */,
 				897181A026269F7200AD571D /* AppDelegate.swift in Sources */,
 				8971821A2626A8F800AD571D /* Localisation+TakePhoto.swift in Sources */,
 				897181A226269F7200AD571D /* SceneDelegate.swift in Sources */,
