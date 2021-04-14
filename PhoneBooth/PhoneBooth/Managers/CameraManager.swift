@@ -55,7 +55,6 @@ class CameraManager: NSObject, TakePhotoService {
 
     func getSessionSetupResult() -> SessionSetupResult { setupResult }
 
-
     func startSession(completion: @escaping (Result<Bool, Error>) -> Void) {
         guard setupResult == .success else { return }
         sessionQueue.async {
@@ -122,7 +121,7 @@ class CameraManager: NSObject, TakePhotoService {
         takePicture = true
     }
 
-    private func setupInputs(){
+    private func setupInputs() {
         //get back camera
         if let device = AVCaptureDevice.default(.builtInWideAngleCamera, for: .video, position: .back) {
             backCamera = device
@@ -159,7 +158,7 @@ class CameraManager: NSObject, TakePhotoService {
         captureSession.addInput(backInput)
     }
 
-    private func setupOutput(){
+    private func setupOutput() {
         videoOutput = AVCaptureVideoDataOutput()
         let videoQueue = DispatchQueue(label: "videoQueue", qos: .userInteractive)
         videoOutput.setSampleBufferDelegate(self, queue: videoQueue)

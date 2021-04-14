@@ -85,10 +85,10 @@
             </objects>
             <point key="canvasLocation" x="18.840579710144929" y="76.339285714285708"/>
         </scene>
-        <!--View Controller-->
+        <!--View Photos View Controller-->
         <scene sceneID="Il1-z3-55B">
             <objects>
-                <viewController id="IgP-KQ-UWZ" sceneMemberID="viewController">
+                <viewController id="IgP-KQ-UWZ" customClass="ViewPhotosViewController" customModule="PhoneBooth" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bDJ-35-cKi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
