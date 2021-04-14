@@ -11,7 +11,6 @@
 		53A6F663D14DE85C7A71076D /* Pods_PhoneBoothTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17E37B6E9344D6144B9FFF1F /* Pods_PhoneBoothTests.framework */; };
 		897181A026269F7200AD571D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8971819F26269F7200AD571D /* AppDelegate.swift */; };
 		897181A226269F7200AD571D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897181A126269F7200AD571D /* SceneDelegate.swift */; };
-		897181A426269F7200AD571D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897181A326269F7200AD571D /* ViewController.swift */; };
 		897181A726269F7200AD571D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 897181A526269F7200AD571D /* Main.storyboard */; };
 		897181AA26269F7200AD571D /* PhoneBooth.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 897181A826269F7200AD571D /* PhoneBooth.xcdatamodeld */; };
 		897181AC26269F7300AD571D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 897181AB26269F7300AD571D /* Assets.xcassets */; };
@@ -19,6 +18,9 @@
 		897181BA26269F7400AD571D /* PhoneBoothTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897181B926269F7400AD571D /* PhoneBoothTests.swift */; };
 		897181C526269F7400AD571D /* PhoneBoothUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897181C426269F7400AD571D /* PhoneBoothUITests.swift */; };
 		897181D926269FD700AD571D /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 897181D826269FD700AD571D /* .gitignore */; };
+		897181EC2626A5B100AD571D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897181EB2626A5B100AD571D /* MainViewController.swift */; };
+		897182062626A6EA00AD571D /* Localisation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897182052626A6EA00AD571D /* Localisation.swift */; };
+		8971820B2626A70E00AD571D /* Licalisation+MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8971820A2626A70E00AD571D /* Licalisation+MainView.swift */; };
 		FBEFB15D44D4184BA38983B6 /* Pods_PhoneBooth_PhoneBoothUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56B10618B817A5A62AFA2FED /* Pods_PhoneBooth_PhoneBoothUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,7 +52,6 @@
 		8971819C26269F7200AD571D /* PhoneBooth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhoneBooth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8971819F26269F7200AD571D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		897181A126269F7200AD571D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		897181A326269F7200AD571D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		897181A626269F7200AD571D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		897181A926269F7200AD571D /* PhoneBooth.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PhoneBooth.xcdatamodel; sourceTree = "<group>"; };
 		897181AB26269F7300AD571D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -63,6 +64,9 @@
 		897181C426269F7400AD571D /* PhoneBoothUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneBoothUITests.swift; sourceTree = "<group>"; };
 		897181C626269F7400AD571D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		897181D826269FD700AD571D /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		897181EB2626A5B100AD571D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		897182052626A6EA00AD571D /* Localisation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localisation.swift; sourceTree = "<group>"; };
+		8971820A2626A70E00AD571D /* Licalisation+MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Licalisation+MainView.swift"; sourceTree = "<group>"; };
 		D95BCD36BB69377749F90CA1 /* Pods-PhoneBooth-PhoneBoothUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhoneBooth-PhoneBoothUITests.debug.xcconfig"; path = "Target Support Files/Pods-PhoneBooth-PhoneBoothUITests/Pods-PhoneBooth-PhoneBoothUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		F300B166CD814C5DFF595EC4 /* Pods_PhoneBooth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhoneBooth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -134,14 +138,19 @@
 		8971819E26269F7200AD571D /* PhoneBooth */ = {
 			isa = PBXGroup;
 			children = (
+				897181F62626A66900AD571D /* Extensions */,
+				897181F52626A65E00AD571D /* Managers */,
+				897181F42626A65800AD571D /* CoreData */,
+				897181F32626A65300AD571D /* Helpers */,
+				897181F22626A64B00AD571D /* ViewModels */,
+				897181F12626A64300AD571D /* Localisation */,
+				897181F02626A63D00AD571D /* Views */,
 				8971819F26269F7200AD571D /* AppDelegate.swift */,
 				897181A126269F7200AD571D /* SceneDelegate.swift */,
-				897181A326269F7200AD571D /* ViewController.swift */,
 				897181A526269F7200AD571D /* Main.storyboard */,
 				897181AB26269F7300AD571D /* Assets.xcassets */,
 				897181AD26269F7300AD571D /* LaunchScreen.storyboard */,
 				897181B026269F7300AD571D /* Info.plist */,
-				897181A826269F7200AD571D /* PhoneBooth.xcdatamodeld */,
 			);
 			path = PhoneBooth;
 			sourceTree = "<group>";
@@ -162,6 +171,91 @@
 				897181C626269F7400AD571D /* Info.plist */,
 			);
 			path = PhoneBoothUITests;
+			sourceTree = "<group>";
+		};
+		897181F02626A63D00AD571D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				897181FA2626A69100AD571D /* PhotoDetails */,
+				897181F92626A68400AD571D /* ViewPhotos */,
+				897181F82626A67D00AD571D /* TakePhoto */,
+				897181F72626A67700AD571D /* Main */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		897181F12626A64300AD571D /* Localisation */ = {
+			isa = PBXGroup;
+			children = (
+				897182052626A6EA00AD571D /* Localisation.swift */,
+				8971820A2626A70E00AD571D /* Licalisation+MainView.swift */,
+			);
+			path = Localisation;
+			sourceTree = "<group>";
+		};
+		897181F22626A64B00AD571D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		897181F32626A65300AD571D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		897181F42626A65800AD571D /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				897181A826269F7200AD571D /* PhoneBooth.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		897181F52626A65E00AD571D /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		897181F62626A66900AD571D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		897181F72626A67700AD571D /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				897181EB2626A5B100AD571D /* MainViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		897181F82626A67D00AD571D /* TakePhoto */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TakePhoto;
+			sourceTree = "<group>";
+		};
+		897181F92626A68400AD571D /* ViewPhotos */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewPhotos;
+			sourceTree = "<group>";
+		};
+		897181FA2626A69100AD571D /* PhotoDetails */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PhotoDetails;
 			sourceTree = "<group>";
 		};
 		AAA03A89250A25E0418CD516 /* Frameworks */ = {
@@ -395,10 +489,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				897181A426269F7200AD571D /* ViewController.swift in Sources */,
 				897181AA26269F7200AD571D /* PhoneBooth.xcdatamodeld in Sources */,
+				897182062626A6EA00AD571D /* Localisation.swift in Sources */,
 				897181A026269F7200AD571D /* AppDelegate.swift in Sources */,
 				897181A226269F7200AD571D /* SceneDelegate.swift in Sources */,
+				8971820B2626A70E00AD571D /* Licalisation+MainView.swift in Sources */,
+				897181EC2626A5B100AD571D /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HRr-h9-msR">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -85,10 +85,10 @@
             </objects>
             <point key="canvasLocation" x="18.840579710144929" y="76.339285714285708"/>
         </scene>
-        <!--Take Photo View Controller-->
+        <!--View Controller-->
         <scene sceneID="ukG-Nk-ZJw">
             <objects>
-                <viewController id="B4x-xt-CB3" customClass="TakePhotoViewController" customModule="PhoneBooth" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="B4x-xt-CB3" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8ip-CQ-8zm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -139,9 +139,6 @@
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="75" id="Mbw-Mt-kiV"/>
                                                 </constraints>
                                                 <state key="normal" title="Save"/>
-                                                <connections>
-                                                    <action selector="saveImageButtonClicked:" destination="B4x-xt-CB3" eventType="touchUpInside" id="S7c-st-tfL"/>
-                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -162,9 +159,6 @@
                                             <constraint firstAttribute="height" constant="44" id="k52-wM-LUO"/>
                                         </constraints>
                                         <state key="normal" title="Discard"/>
-                                        <connections>
-                                            <action selector="discardImageButtonClicked:" destination="B4x-xt-CB3" eventType="touchUpInside" id="qnm-za-7x8"/>
-                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -195,9 +189,6 @@
                                                 <integer key="value" value="4"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="takePhotoButtonClicked:" destination="B4x-xt-CB3" eventType="touchUpInside" id="0WI-gp-hsO"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z2e-Zt-08C">
                                         <rect key="frame" x="324" y="0.0" width="60" height="60"/>
@@ -208,9 +199,6 @@
                                                 <integer key="value" value="4"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="flipCameraButtonClicked:" destination="B4x-xt-CB3" eventType="touchUpInside" id="Op1-cP-DRj"/>
-                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -238,25 +226,15 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="caf-ST-knS"/>
-                    <connections>
-                        <outlet property="cameraOptionsView" destination="uca-Wu-MBN" id="cEt-Y8-bv7"/>
-                        <outlet property="cameraOptionsViewHeightConstraints" destination="huF-7v-DK6" id="IwT-9U-JTA"/>
-                        <outlet property="fileNameTextField" destination="MUE-GL-KF8" id="p6x-Lm-DfT"/>
-                        <outlet property="flipCameraButton" destination="Z2e-Zt-08C" id="YPC-Ec-PH4"/>
-                        <outlet property="takePhotoButton" destination="6L3-vH-BTw" id="IWn-4F-XY7"/>
-                        <outlet property="thumbnilContainerView" destination="L3Y-ac-XI9" id="2e2-mT-6hx"/>
-                        <outlet property="thumbnilContainerViewHeightConstraints" destination="GaW-u4-8pd" id="V9t-RF-K50"/>
-                        <outlet property="thumbnilImage" destination="4rU-JL-v4D" id="eEO-kJ-Bnc"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NEO-3N-wY6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2099" y="-360"/>
         </scene>
-        <!--View Photos View Controller-->
+        <!--View Controller-->
         <scene sceneID="Il1-z3-55B">
             <objects>
-                <viewController id="IgP-KQ-UWZ" customClass="ViewPhotosViewController" customModule="PhoneBooth" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="IgP-KQ-UWZ" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bDJ-35-cKi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -300,10 +278,10 @@
             </objects>
             <point key="canvasLocation" x="2098.5507246376815" y="342.85714285714283"/>
         </scene>
-        <!--Photo Details View Controller-->
+        <!--View Controller-->
         <scene sceneID="amp-F1-lL4">
             <objects>
-                <viewController storyboardIdentifier="PhotoDetailsViewController" id="2Xw-wC-a0r" customClass="PhotoDetailsViewController" customModule="PhoneBooth" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PhotoDetailsViewController" id="2Xw-wC-a0r" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="s3n-9Q-zIy">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -322,9 +300,6 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ovZ-fz-vUY"/>
-                    <connections>
-                        <outlet property="imageView" destination="e5X-Sd-I7y" id="Bn5-Xr-jQr"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d2p-hl-dU2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
