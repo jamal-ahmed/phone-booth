@@ -15,7 +15,6 @@
 		897181AA26269F7200AD571D /* PhoneBooth.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 897181A826269F7200AD571D /* PhoneBooth.xcdatamodeld */; };
 		897181AC26269F7300AD571D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 897181AB26269F7300AD571D /* Assets.xcassets */; };
 		897181AF26269F7300AD571D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 897181AD26269F7300AD571D /* LaunchScreen.storyboard */; };
-		897181BA26269F7400AD571D /* PhoneBoothTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897181B926269F7400AD571D /* PhoneBoothTests.swift */; };
 		897181C526269F7400AD571D /* PhoneBoothUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897181C426269F7400AD571D /* PhoneBoothUITests.swift */; };
 		897181D926269FD700AD571D /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 897181D826269FD700AD571D /* .gitignore */; };
 		897181EC2626A5B100AD571D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897181EB2626A5B100AD571D /* MainViewController.swift */; };
@@ -31,6 +30,8 @@
 		897182552626B53500AD571D /* RepositoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897182542626B53500AD571D /* RepositoryService.swift */; };
 		8971825A2626B6BC00AD571D /* UIImage+Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897182592626B6BC00AD571D /* UIImage+Data.swift */; };
 		8971825F2626B72C00AD571D /* ImageResizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8971825E2626B72C00AD571D /* ImageResizer.swift */; };
+		8971826B2626BA2C00AD571D /* CoreDataTestStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8971826A2626BA2C00AD571D /* CoreDataTestStack.swift */; };
+		897182732626BA9000AD571D /* PhotoRepositoryManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897182722626BA9000AD571D /* PhotoRepositoryManagerTests.swift */; };
 		FBEFB15D44D4184BA38983B6 /* Pods_PhoneBooth_PhoneBoothUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56B10618B817A5A62AFA2FED /* Pods_PhoneBooth_PhoneBoothUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -68,7 +69,6 @@
 		897181AE26269F7300AD571D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		897181B026269F7300AD571D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		897181B526269F7400AD571D /* PhoneBoothTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhoneBoothTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		897181B926269F7400AD571D /* PhoneBoothTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneBoothTests.swift; sourceTree = "<group>"; };
 		897181BB26269F7400AD571D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		897181C026269F7400AD571D /* PhoneBoothUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhoneBoothUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		897181C426269F7400AD571D /* PhoneBoothUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneBoothUITests.swift; sourceTree = "<group>"; };
@@ -87,6 +87,8 @@
 		897182542626B53500AD571D /* RepositoryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryService.swift; sourceTree = "<group>"; };
 		897182592626B6BC00AD571D /* UIImage+Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Data.swift"; sourceTree = "<group>"; };
 		8971825E2626B72C00AD571D /* ImageResizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageResizer.swift; sourceTree = "<group>"; };
+		8971826A2626BA2C00AD571D /* CoreDataTestStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataTestStack.swift; sourceTree = "<group>"; };
+		897182722626BA9000AD571D /* PhotoRepositoryManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoRepositoryManagerTests.swift; sourceTree = "<group>"; };
 		D95BCD36BB69377749F90CA1 /* Pods-PhoneBooth-PhoneBoothUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhoneBooth-PhoneBoothUITests.debug.xcconfig"; path = "Target Support Files/Pods-PhoneBooth-PhoneBoothUITests/Pods-PhoneBooth-PhoneBoothUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		F300B166CD814C5DFF595EC4 /* Pods_PhoneBooth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhoneBooth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -179,8 +181,9 @@
 		897181B826269F7400AD571D /* PhoneBoothTests */ = {
 			isa = PBXGroup;
 			children = (
-				897181B926269F7400AD571D /* PhoneBoothTests.swift */,
+				8971826A2626BA2C00AD571D /* CoreDataTestStack.swift */,
 				897181BB26269F7400AD571D /* Info.plist */,
+				897182722626BA9000AD571D /* PhotoRepositoryManagerTests.swift */,
 			);
 			path = PhoneBoothTests;
 			sourceTree = "<group>";
@@ -550,7 +553,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				897181BA26269F7400AD571D /* PhoneBoothTests.swift in Sources */,
+				897182732626BA9000AD571D /* PhotoRepositoryManagerTests.swift in Sources */,
+				8971826B2626BA2C00AD571D /* CoreDataTestStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -763,7 +767,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5H48WCKZX3;
 				INFOPLIST_FILE = PhoneBoothTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -773,6 +780,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = app.jerin.PhoneBoothTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhoneBooth.app/PhoneBooth";
@@ -785,7 +794,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5H48WCKZX3;
 				INFOPLIST_FILE = PhoneBoothTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -795,6 +807,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = app.jerin.PhoneBoothTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhoneBooth.app/PhoneBooth";
@@ -806,7 +820,10 @@
 			baseConfigurationReference = D95BCD36BB69377749F90CA1 /* Pods-PhoneBooth-PhoneBoothUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5H48WCKZX3;
 				INFOPLIST_FILE = PhoneBoothUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -815,6 +832,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = app.jerin.PhoneBoothUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = PhoneBooth;
@@ -826,7 +845,10 @@
 			baseConfigurationReference = 3BED652892AECCF6900E8BC8 /* Pods-PhoneBooth-PhoneBoothUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5H48WCKZX3;
 				INFOPLIST_FILE = PhoneBoothUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -835,6 +857,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = app.jerin.PhoneBoothUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = PhoneBooth;

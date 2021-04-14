@@ -43,7 +43,7 @@ struct PhotoRepositoryManager: RepositoryService {
     func fetchPhoto(withName name: String, completion: (Result<Photo?, Error>) -> Void) {
         let fetchRequest = NSFetchRequest<Photo>(entityName: "Photo")
         fetchRequest.fetchLimit = 1
-        fetchRequest.predicate = NSPredicate(format: "firstName == %@", name)
+        fetchRequest.predicate = NSPredicate(format: "imageName == %@", name)
 
         do {
             let photos = try mainContext.fetch(fetchRequest)
