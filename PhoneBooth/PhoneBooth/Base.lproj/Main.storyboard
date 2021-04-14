@@ -62,6 +62,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="a5v-TW-01h"/>
+                    <connections>
+                        <outlet property="takePhotoButton" destination="Xmn-DX-rTi" id="7cJ-gQ-TIl"/>
+                        <outlet property="viewPhotosButton" destination="ES3-K8-bC8" id="hsp-Rk-83u"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SQG-8d-DfZ" sceneMemberID="firstResponder"/>
             </objects>

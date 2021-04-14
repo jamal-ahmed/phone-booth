@@ -13,6 +13,7 @@ class ViewPhotosViewController: UIViewController {
     }
 
     private func setupCollectionView() {
+        collectionView.accessibilityIdentifier = AccessibilityIdentifier.viewPhotosCollectionView
         collectionView.dataSource = self
         collectionView.delegate = self
         let nib = UINib(nibName: "PhotosCollectionViewCell", bundle: nil)

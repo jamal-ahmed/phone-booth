@@ -175,7 +175,9 @@ class CameraManager: NSObject, TakePhotoService {
 }
 
 extension CameraManager: AVCaptureVideoDataOutputSampleBufferDelegate {
-    func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
+    func captureOutput(_ output: AVCaptureOutput,
+                       didOutput sampleBuffer: CMSampleBuffer,
+                       from connection: AVCaptureConnection) {
         if !takePicture {
             return //we have nothing to do with the image buffer
         }

@@ -1,6 +1,9 @@
 import UIKit
 
 class MainViewController: UIViewController {
+    @IBOutlet weak var takePhotoButton: RoundedCornerButton!
+    @IBOutlet weak var viewPhotosButton: RoundedCornerButton!
+
     // MARK: - local constants
     private let localised = Localised.mainView
 
@@ -10,15 +13,17 @@ class MainViewController: UIViewController {
         self.title = localised.screenTitle
     }
 
+    private func setupViews() {
+        takePhotoButton.accessibilityIdentifier = AccessibilityIdentifier.takePhotoButton
+        viewPhotosButton.accessibilityIdentifier = AccessibilityIdentifier.viewPhotosButton
+    }
     // MARK: - Segues
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if let viewController = segue.destination as? TakePhotoViewController {
-//            viewController.viewModel = TakePhotoViewModel()
-//            viewController.screenTitle = localised.takePhotoTitle
-//
-//        } else if let viewController = segue.destination as? ViewPhotosViewController {
-//            viewController.viewModel = ViewPhotosViewModel()
-//            viewController.screenTitle = localised.viewPhotosTitle
-//        }
+        if let viewController = segue.destination as? TakePhotoViewController {
+            viewController.title = localised.takePhotoTitle
+
+        } else if let viewController = segue.destination as? ViewPhotosViewController {
+            viewController.title = localised.viewPhotosTitle
+        }
     }
 }

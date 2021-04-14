@@ -15,7 +15,6 @@
 		897181AA26269F7200AD571D /* PhoneBooth.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 897181A826269F7200AD571D /* PhoneBooth.xcdatamodeld */; };
 		897181AC26269F7300AD571D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 897181AB26269F7300AD571D /* Assets.xcassets */; };
 		897181AF26269F7300AD571D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 897181AD26269F7300AD571D /* LaunchScreen.storyboard */; };
-		897181C526269F7400AD571D /* PhoneBoothUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897181C426269F7400AD571D /* PhoneBoothUITests.swift */; };
 		897181D926269FD700AD571D /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 897181D826269FD700AD571D /* .gitignore */; };
 		897181EC2626A5B100AD571D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897181EB2626A5B100AD571D /* MainViewController.swift */; };
 		897182062626A6EA00AD571D /* Localisation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897182052626A6EA00AD571D /* Localisation.swift */; };
@@ -36,6 +35,10 @@
 		897182952626CB9F00AD571D /* PhotosCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897182932626CB9F00AD571D /* PhotosCollectionViewCell.swift */; };
 		897182962626CB9F00AD571D /* PhotosCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 897182942626CB9F00AD571D /* PhotosCollectionViewCell.xib */; };
 		8971829B2626D3C300AD571D /* PhotoDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8971829A2626D3C300AD571D /* PhotoDetailsViewController.swift */; };
+		897182A32626D83100AD571D /* MainViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897182A22626D83100AD571D /* MainViewTests.swift */; };
+		897182F92626E91D00AD571D /* AccessibilityIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897182F82626E91D00AD571D /* AccessibilityIdentifier.swift */; };
+		897183022626EB8200AD571D /* AccessibilityIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897182F82626E91D00AD571D /* AccessibilityIdentifier.swift */; };
+		897183062626EB8300AD571D /* AccessibilityIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897182F82626E91D00AD571D /* AccessibilityIdentifier.swift */; };
 		FBEFB15D44D4184BA38983B6 /* Pods_PhoneBooth_PhoneBoothUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56B10618B817A5A62AFA2FED /* Pods_PhoneBooth_PhoneBoothUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -75,7 +78,6 @@
 		897181B526269F7400AD571D /* PhoneBoothTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhoneBoothTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		897181BB26269F7400AD571D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		897181C026269F7400AD571D /* PhoneBoothUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhoneBoothUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		897181C426269F7400AD571D /* PhoneBoothUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneBoothUITests.swift; sourceTree = "<group>"; };
 		897181C626269F7400AD571D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		897181D826269FD700AD571D /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		897181EB2626A5B100AD571D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -97,6 +99,8 @@
 		897182932626CB9F00AD571D /* PhotosCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosCollectionViewCell.swift; sourceTree = "<group>"; };
 		897182942626CB9F00AD571D /* PhotosCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotosCollectionViewCell.xib; sourceTree = "<group>"; };
 		8971829A2626D3C300AD571D /* PhotoDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailsViewController.swift; sourceTree = "<group>"; };
+		897182A22626D83100AD571D /* MainViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewTests.swift; sourceTree = "<group>"; };
+		897182F82626E91D00AD571D /* AccessibilityIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityIdentifier.swift; sourceTree = "<group>"; };
 		D95BCD36BB69377749F90CA1 /* Pods-PhoneBooth-PhoneBoothUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhoneBooth-PhoneBoothUITests.debug.xcconfig"; path = "Target Support Files/Pods-PhoneBooth-PhoneBoothUITests/Pods-PhoneBooth-PhoneBoothUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		F300B166CD814C5DFF595EC4 /* Pods_PhoneBooth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhoneBooth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -173,7 +177,6 @@
 				897181F52626A65E00AD571D /* Managers */,
 				897181F42626A65800AD571D /* CoreData */,
 				897181F32626A65300AD571D /* Helpers */,
-				897181F22626A64B00AD571D /* ViewModels */,
 				897181F12626A64300AD571D /* Localisation */,
 				897181F02626A63D00AD571D /* Views */,
 				8971819F26269F7200AD571D /* AppDelegate.swift */,
@@ -189,8 +192,8 @@
 		897181B826269F7400AD571D /* PhoneBoothTests */ = {
 			isa = PBXGroup;
 			children = (
-				8971826A2626BA2C00AD571D /* CoreDataTestStack.swift */,
 				897181BB26269F7400AD571D /* Info.plist */,
+				8971826A2626BA2C00AD571D /* CoreDataTestStack.swift */,
 				897182722626BA9000AD571D /* PhotoRepositoryManagerTests.swift */,
 			);
 			path = PhoneBoothTests;
@@ -199,7 +202,7 @@
 		897181C326269F7400AD571D /* PhoneBoothUITests */ = {
 			isa = PBXGroup;
 			children = (
-				897181C426269F7400AD571D /* PhoneBoothUITests.swift */,
+				897182A22626D83100AD571D /* MainViewTests.swift */,
 				897181C626269F7400AD571D /* Info.plist */,
 			);
 			path = PhoneBoothUITests;
@@ -226,18 +229,12 @@
 			path = Localisation;
 			sourceTree = "<group>";
 		};
-		897181F22626A64B00AD571D /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
 		897181F32626A65300AD571D /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
 				897182232626A9C800AD571D /* RoundedCornerButton.swift */,
 				8971825E2626B72C00AD571D /* ImageResizer.swift */,
+				897182F82626E91D00AD571D /* AccessibilityIdentifier.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -550,6 +547,7 @@
 				8971825F2626B72C00AD571D /* ImageResizer.swift in Sources */,
 				897181A026269F7200AD571D /* AppDelegate.swift in Sources */,
 				8971822C2626AAE200AD571D /* CameraManager.swift in Sources */,
+				897182F92626E91D00AD571D /* AccessibilityIdentifier.swift in Sources */,
 				8971821A2626A8F800AD571D /* Localisation+TakePhoto.swift in Sources */,
 				897181A226269F7200AD571D /* SceneDelegate.swift in Sources */,
 				8971829B2626D3C300AD571D /* PhotoDetailsViewController.swift in Sources */,
@@ -570,6 +568,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				897182732626BA9000AD571D /* PhotoRepositoryManagerTests.swift in Sources */,
+				897183062626EB8300AD571D /* AccessibilityIdentifier.swift in Sources */,
 				8971826B2626BA2C00AD571D /* CoreDataTestStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -578,7 +577,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				897181C526269F7400AD571D /* PhoneBoothUITests.swift in Sources */,
+				897182A32626D83100AD571D /* MainViewTests.swift in Sources */,
+				897183022626EB8200AD571D /* AccessibilityIdentifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
